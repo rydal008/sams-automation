@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAMS Automation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>SAMS Automation</h1>
+  <p class="lede">A private helper that keeps St. Augustine's Parish monthly ministry schedule
+  (greeters, Eucharistic ministers, lectors, altar servers and music) up to date.</p>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>It watches one parish mailbox for schedule-change emails whose subject starts with <code>SAMS-</code>.</li>
+    <li>Two AI models read each request separately, and a set of parish rules checks the result.</li>
+    <li>The parish schedule coordinator gets a summary and replies <strong>CONFIRM</strong> before anything changes.</li>
+    <li>Only after that confirmation are the affected cells of the parish's schedule spreadsheet updated.</li>
+  </ol>
+
+  <h2>Who can use it</h2>
+  <p>SAMS Automation is not a public service. It runs on one computer for the parish and is
+  signed in to a single Google account. Nobody else can sign in to it or use it.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+</main>
+<footer>Contact: <a href="mailto:ralegrado.ca@gmail.com">ralegrado.ca@gmail.com</a></footer>
+</body>
+</html>
